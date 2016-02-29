@@ -1,0 +1,20 @@
+@import "variables";
+@mixin header-gradient {
+    background-color: $header-bg-top;
+    background-image: #{$wk}linear-gradient(top, $header-bg-top, $header-bg-bottom 36px, $header-bg-bottom);
+    background-image: linear-gradient(to bottom, $header-bg-top, $header-bg-bottom 36px, $header-bg-bottom);
+    height: 36px
+
+
+}
+
+@mixin nav-gradient{
+  background-color: $nav-bg-bottom;
+  background-image: #{$wk}gradient(linear,left top,left bottom,from($nav-bg-top),to($nav-bg-bottom));
+  background-image: #{$wk}linear-gradient(top,$nav-bg-top,$nav-bg-bottom);
+  background-image: linear-gradient(to bottom,$nav-bg-top,$nav-bg-bottom);
+  border-top: 1px solid $nav-bg-top-border;
+  #{$wk}box-shadow: rgba(0,0,0,.5) 0 1px 3px,rgba(0,0,0,.15) 0 -1px 0 inset;
+  box-shadow: rgba(0,0,0,.5) 0 1px 3px,rgba(0,0,0,.15) 0 -1px 0 inset;
+
+}

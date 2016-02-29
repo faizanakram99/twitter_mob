@@ -1,0 +1,4829 @@
+.full-box,
+.switcher {
+    -webkit-box-sizing: border-box
+}
+
+body,
+body[omniprompt=yes] header {
+    position: relative
+}
+
+.card2 .util-cf:after,
+hr {
+    clear: both
+}
+
+.card2 .util-link-complex:active,
+.card2 .util-link-complex:focus,
+.card2 .util-link-complex:hover,
+a,
+s {
+    text-decoration: none
+}
+
+.full-box,
+.stream-item-wrapper,
+.switcher,
+header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal
+}
+
+.activity-item .tweet-text,
+.button,
+.card2 .util-text-truncate,
+.pivot-topic,
+.social-context,
+.stream-tweet .user-name,
+.tweet-label,
+.user-info .full-name,
+header .title {
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.button {
+    background-color: #DDD;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+    background-image: -webkit-linear-gradient(top, #FFF, #DDD);
+    background-image: linear-gradient(to bottom, #FFF, #DDD);
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+    overflow: hidden;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    font: normal normal normal 12px/15px 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+    display: inline-block;
+    margin: 0;
+    padding: 6px 10px 7px;
+    text-shadow: #F0F0F0 0 1px
+}
+
+.button.transparent {
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .2)), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(60%, rgba(100, 100, 100, 0)), to(rgba(100, 100, 100, .05)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0) 40%, rgba(100, 100, 100, 0) 60%, rgba(100, 100, 100, .05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0) 40%, rgba(100, 100, 100, 0) 60%, rgba(100, 100, 100, .05));
+    -webkit-box-shadow: rgba(255, 255, 255, .2) 0 1px 0 inset, rgba(255, 255, 255, .4) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, .2) 0 1px 0 inset, rgba(255, 255, 255, .4) 0 1px 0;
+    border-color: rgba(0, 0, 0, .2)
+}
+
+.button.transparent:active {
+    background: rgba(0, 0, 0, .1)
+}
+
+.button.inactive,
+.switcher-item.button.active,
+.switcher-item.button:active {
+    background-image: none
+}
+
+.button.active,
+.button:active {
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 1px 0 inset, rgba(255, 255, 255, .5) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 0 inset, rgba(255, 255, 255, .5) 0 1px 0;
+    border: 1px solid #a8a8a8;
+    background: rgba(0, 0, 0, .1)
+}
+
+.button.black {
+    background-color: #3C3C3C;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3C3C3C), color-stop(49%, #282828), color-stop(50%, #1E1E1E), to(#222));
+    background-image: -webkit-linear-gradient(top, #3C3C3C, #282828 49%, #1E1E1E 50%, #222);
+    background-image: linear-gradient(to bottom, #3C3C3C, #282828 49%, #1E1E1E 50%, #222);
+    -webkit-box-shadow: rgba(255, 255, 255, .1) 0 1px 0, rgba(0, 0, 0, .2) 0 1px 0 inset;
+    box-shadow: rgba(255, 255, 255, .1) 0 1px 0, rgba(0, 0, 0, .2) 0 1px 0 inset;
+    color: #FFF;
+    text-shadow: #131313 0 0 1px;
+    font-weight: 700;
+    border-color: #000
+}
+
+.button.black:active {
+    background: #333
+}
+
+.button.orange {
+    background-color: #F6AF00;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FAF246), to(#F6AF00));
+    background-image: -webkit-linear-gradient(top, #FAF246, #F6AF00);
+    background-image: linear-gradient(to bottom, #FAF246, #F6AF00);
+    border-color: #F6AF00
+}
+
+.button.darkgray,
+.button.red {
+    border: none;
+    color: #FFF!important
+}
+
+.button.darkgray {
+    background-color: #999;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#525252));
+    background-image: -webkit-linear-gradient(top, #999, #525252);
+    background-image: linear-gradient(to bottom, #999, #525252);
+    -webkit-box-shadow: #000 0 1px 1px;
+    box-shadow: #000 0 1px 1px;
+    text-shadow: #313131 0 1px
+}
+
+.button.red {
+    background-color: #eb1314;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eb1314), to(#b3110f));
+    background-image: -webkit-linear-gradient(top, #eb1314, #b3110f);
+    background-image: linear-gradient(to bottom, #eb1314, #b3110f);
+    -webkit-box-shadow: #000 0 1px 1px;
+    box-shadow: #000 0 1px 1px;
+    text-shadow: #b3110f 0 1px
+}
+
+.button.blue {
+    background-color: #34bdef;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#80CAFF), to(#2988CC));
+    background-image: -webkit-linear-gradient(top, #80CAFF, #2988CC);
+    background-image: linear-gradient(to bottom, #80CAFF, #2988CC);
+    color: #FFF;
+    text-shadow: -1px -1px 0 #39D;
+    border: 1px solid #1480cc
+}
+
+.button.blue:active {
+    background: #2988cc
+}
+
+.button.disabled {
+    background: 0 0;
+    border-color: #ccc;
+    color: #999;
+    text-shadow: none
+}
+
+.buttons .button-icon {
+    display: inline-block
+}
+
+.switcher {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 12px 0 10px
+}
+
+.switcher-item {
+    background-color: #FFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), color-stop(70%, #F5F5F5), to(#E4E4E4));
+    background-image: -webkit-linear-gradient(top, #FFF, #F5F5F5 70%, #E4E4E4);
+    background-image: linear-gradient(to bottom, #FFF, #F5F5F5 70%, #E4E4E4);
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 50%;
+    max-width: 150px;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    border-color: #B5B5B5;
+    color: #666;
+    padding: 6px 9px
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+li,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+.switcher-item.button.active {
+    background-color: #E6E6E6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E6E6E6), color-stop(70%, #DDD), to(#CCC));
+    background-image: -webkit-linear-gradient(top, #E6E6E6, #DDD 70%, #CCC);
+    background-image: linear-gradient(to bottom, #E6E6E6, #DDD 70%, #CCC);
+    color: #444;
+    border-color: #B5B5B5
+}
+
+.switcher .button {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.switcher .button:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: none
+}
+
+.switcher .button:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px
+}
+
+html {
+    width: 100%;
+    height: 100%
+}
+
+body,
+html {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none
+}
+
+li,
+ul {
+    list-style-type: none
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #EEE;
+    color: #333;
+    font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+    -webkit-tap-highlight-color: transparent
+}
+
+html.touchscroll body {
+    overflow: hidden
+}
+
+html:not(.android) body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px
+}
+
+.android body {
+    overflow-y: auto
+}
+
+#templates,
+.hidden {
+    display: none!important
+}
+
+a {
+    color: #2477b3;
+    outline: 0
+}
+
+.android a {
+    -webkit-tap-highlight-color: transparent
+}
+
+a:active {
+    outline: 0!important
+}
+
+a.activeLink:active,
+a.activeLink:hover {
+    outline: auto!important;
+    -webkit-tap-highlight-color: rgba(26, 26, 26, .3)
+}
+
+s {
+    outline: 0
+}
+
+.userselect {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text
+}
+
+hr {
+    border: 1px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    display: block;
+    height: 0;
+    margin: 7px 0 14px
+}
+
+.full-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.content,
+header {
+    -webkit-box-sizing: border-box
+}
+
+.box-flex {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.dir-rtl {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: embed
+}
+
+.dir-ltr,
+.screen-name {
+    direction: ltr;
+    unicode-bidi: embed
+}
+
+.dir-ltr {
+    text-align: left
+}
+
+header {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+html[viewport=default] header {
+    position: absolute
+}
+
+#views,
+.content,
+.page-view-host {
+    position: relative
+}
+
+header .title {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    font-size: 15px;
+    text-align: center
+}
+
+header .padding {
+    margin: 0 0 0 10px;
+    width: 60px;
+    text-align: left
+}
+
+header .padding.right {
+    margin: 0 3px 0 0;
+    text-align: right
+}
+
+header .wide .button {
+    width: auto;
+    max-width: none
+}
+
+.title.left {
+    font-weight: 500;
+    text-align: left;
+    margin: 0 0 0 10px
+}
+
+header .button {
+    display: inline-block;
+    font-weight: 700;
+    padding: 7px 9px 8px;
+    max-width: 60px
+}
+
+.brandbar,
+.content,
+.navbar,
+view {
+    display: block
+}
+
+.content {
+    box-sizing: border-box
+}
+
+html.touchscroll .content {
+    overflow-x: hidden;
+    min-height: 100%
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.spinner {
+    background: url(../html5/framework/core/assets/m_spinner_black.png) center 40% no-repeat;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    -webkit-background-size: 19px 19px;
+    background-size: 19px 19px;
+    display: inline-block;
+    width: 19px;
+    height: 19px
+}
+
+.views {
+    display: block;
+    overflow: hidden
+}
+
+body[status=loading] .views {
+    display: none
+}
+
+.page-view {
+    width: 100%;
+    background: #FFF
+}
+
+html.touchscroll .page-view {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+.page-view,
+.page-view-host .page-view {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none
+}
+
+.page-view[loading=true] {
+    display: block;
+    text-align: center
+}
+
+.page-view>.spinner,
+.page-view[loading=true]>content {
+    display: none
+}
+
+.page-view[loading=true]>.spinner {
+    display: inline-block;
+    margin-top: 45%
+}
+
+#views .page-view[showing=true],
+.page-view-host .page-view[showing=true] {
+    display: block
+}
+
+view.page-view.fade-in {
+    -webkit-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
+    opacity: 0
+}
+
+view.page-view.faded {
+    opacity: 1
+}
+
+.card2 a,
+.card2 a:active,
+.card2 a:focus,
+.card2 a:hover {
+    color: #0084b4
+}
+
+.card2 b {
+    font-weight: 700
+}
+
+.card2 p {
+    margin: 0
+}
+
+.card2.rendered {
+    max-width: 640px;
+    padding: 0 10px 20px;
+    font-size: 14px;
+    line-height: 1.2858em
+}
+
+.card2 .is-hidden {
+    display: none
+}
+
+.card2 .card2-attribution {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 1
+}
+
+.card2 .card2-attribution img {
+    margin-right: 5px
+}
+
+.card2 .card2-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: inherit
+}
+
+.card2 .card2-byline {
+    font-size: 12px
+}
+
+.card2 .card2-description {
+    margin: 6px 0 10px
+}
+
+.card2 .card2-thumbnail {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 5px 0 10px 10px
+}
+
+.card2 .card2-image-wrapper {
+    max-width: 596px;
+    margin: 15px 0 10px
+}
+
+.card2 .card2-image-wrapper video {
+    width: 100%
+}
+
+.card2 .card2-image-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top
+}
+
+.card2 .util-align-middle,
+.follow-button-text,
+.social-context-text,
+.stream-gap.loading .spinner {
+    vertical-align: middle
+}
+
+.card2 .card2-image-pic {
+    display: block;
+    max-width: 100%;
+    max-height: 375px
+}
+
+.card2 .card2-grid {
+    margin-left: -4px;
+    margin-bottom: 6px
+}
+
+.card2 .card2-grid-item {
+    float: left;
+    width: 50%
+}
+
+.card2 .card2-grid-item a {
+    display: block;
+    margin-left: 4px;
+    margin-bottom: 4px
+}
+
+.card2 .card2-grid-item img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.card2 .icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 71px;
+    margin: -35px 0 0 -35px;
+    background: url(../html5/applications/m5/assets/sprite_media.png) no-repeat;
+    -webkit-background-size: 213px 144px;
+    background-size: 213px 144px
+}
+
+.card2 .card2-product-image {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 15px 0 0
+}
+
+.card2 .card2-product-details {
+    overflow: hidden;
+    margin: 12px 0 15px
+}
+
+.card2 .card2-product-info {
+    display: block;
+    border-top: 1px solid #ccc
+}
+
+.card2 .card2-product-info-item {
+    padding: 11px 0 12px;
+    border-bottom: 1px solid #ccc
+}
+
+.card2 .card2-product-info-item:first-child {
+    padding-bottom: 11px
+}
+
+.card2 .card2-product-data {
+    color: #333;
+    font-weight: 700
+}
+
+.card2 .card2-product-label {
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+.card2 .card2-footer {
+    margin-top: 11px
+}
+
+.card2 .util-cf:after,
+.card2 .util-cf:before {
+    content: " ";
+    display: table
+}
+
+.card2 .util-nbfc {
+    overflow: hidden
+}
+
+.card2 .util-nbfc-alt {
+    display: table-cell;
+    width: 10000px
+}
+
+.card2 .util-pull-start {
+    float: left
+}
+
+.card2 .util-pull-end {
+    float: right
+}
+
+.card2 .util-text-mute {
+    color: #999
+}
+
+.card2 .util-text-normal {
+    color: #333
+}
+
+.card2 .util-text-truncate {
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: normal
+}
+
+.card2 .util-text-break,
+.tweet-text {
+    word-wrap: break-word
+}
+
+.card2 .util-rounded {
+    border-radius: 3px
+}
+
+.card2 .util-link-complex:active .util-link-complex-target,
+.card2 .util-link-complex:focus .util-link-complex-target,
+.card2 .util-link-complex:hover .util-link-complex-target {
+    text-decoration: underline
+}
+
+.card2 .util-link-block,
+.card2 .util-link-block:active,
+.card2 .util-link-block:focus,
+.card2 .util-link-block:hover {
+    display: block;
+    text-decoration: none
+}
+
+.follow-button,
+.large .button .plus {
+    display: inline-block
+}
+
+.follow-button .button {
+    padding: 6px 10px 7px
+}
+
+.follow-button.small .button {
+    padding: 6px 8px
+}
+
+.follow-button .button .button-icon {
+    display: inline-block;
+    height: 15px;
+    width: 32px;
+    margin: 0;
+    vertical-align: middle
+}
+
+b.follow {
+    position: relative
+}
+
+.large .button .plus {
+    position: absolute;
+    left: -2px
+}
+
+.follow-button-text.follow-user-text,
+.follow-button.large .button .you-follow,
+.follow-button.small .follow-button-text {
+    display: none
+}
+
+.follow-button.large .button .plus {
+    width: 20px
+}
+
+.social-context,
+.stream-item-wrapper {
+    -webkit-box-sizing: border-box;
+    width: 100%
+}
+
+b.follow .follow-button-text {
+    padding: 0 0 0 21px
+}
+
+.follow-button.profile-following .button {
+    background-color: #80CAFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#80CAFF), to(#2988CC));
+    background-image: -webkit-linear-gradient(top, #80CAFF, #2988CC);
+    background-image: linear-gradient(to bottom, #80CAFF, #2988CC);
+    border: 1px solid #1480CC;
+    color: #fff!important;
+    text-shadow: none
+}
+
+.follow-button.profile-following .button:active {
+    background: #2988CC
+}
+
+.follow-button .you-blocked {
+    font-weight: 700;
+    padding: 5px 0;
+    display: none
+}
+
+.follow-button[blocking=true] .you-blocked,
+.follow-button[requested=true] .pending,
+.follow-button[requested=true] .pending .follow-button-text {
+    display: inline-block
+}
+
+.follow-button .pending,
+.follow-button.profile-following .follow,
+.follow-button.profile-nofollowing .following,
+.follow-button[blocking=true] .button,
+.follow-button[requested=true] .follow,
+.follow-button[requested=false] .pending {
+    display: none
+}
+
+.button .requested-follow,
+.follow-button .unblock-link {
+    font-weight: 400
+}
+
+.follow-button[requested=false]:not([blocking=true]) .button {
+    display: inline-block
+}
+
+.stream-item {
+    border-bottom: 1px solid #EEE;
+    display: block
+}
+
+.module .no-end-item .stream-item:last-child {
+    border-bottom: none
+}
+
+.stream-item-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box
+}
+
+.stream-item-wrapper.tweet-item {
+    display: block
+}
+
+.social-context,
+.tweet-item .tweet-body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row
+}
+
+.social-context {
+    overflow: hidden;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 3px 0 6px;
+    line-height: 15px;
+    color: #999;
+    font-size: 12px
+}
+
+.social-context-icon.no-context-icon {
+    display: none
+}
+
+.social-context-icon-block {
+    width: 48px;
+    text-align: right;
+    display: block
+}
+
+.social-context-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+    margin-left: 8px;
+    display: block
+}
+
+.tweet-item .tweet-body {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.stream-item-selected {
+    background: #45A3E5!important;
+    color: #FFF!important
+}
+
+.stream-end {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 10px;
+    font-size: 14px
+}
+
+.stream-gap-inner,
+.stream-item-wrapper .tweet-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-sizing: border-box
+}
+
+.empty-stream,
+.stream-end {
+    padding: 15px;
+    color: #999;
+    min-height: 30px;
+    position: relative;
+    text-align: center
+}
+
+.stream-end-text .title {
+    font-weight: 700
+}
+
+.loading-item {
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    text-align: center;
+    min-height: 100px;
+    background: #FFF
+}
+
+.module .loading-item,
+.popover .loading-item {
+    border: none
+}
+
+.avatar,
+avatar {
+    border-radius: 4px
+}
+
+.loading-item .spinner {
+    margin-top: 45px
+}
+
+.quick-actions-drawer,
+.quickActions {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #E8E8E8;
+    border-bottom: 1px solid #BBB;
+    border-top: 1px solid #BBB;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(100, 100, 100, .1)), color-stop(3%, rgba(100, 100, 100, .01))), -webkit-gradient(linear, left top, left bottom, color-stop(96%, rgba(100, 100, 100, .01)), color-stop(99%, rgba(100, 100, 100, .1))), -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#DDD));
+    background-image: -webkit-linear-gradient(top, rgba(100, 100, 100, .1) 1%, rgba(100, 100, 100, .01) 3%), -webkit-linear-gradient(top, rgba(100, 100, 100, .01) 96%, rgba(100, 100, 100, .1) 99%), -webkit-linear-gradient(top, #F6F6F6, #DDD);
+    background-image: linear-gradient(to bottom, rgba(100, 100, 100, .1) 1%, rgba(100, 100, 100, .01) 3%), linear-gradient(to bottom, rgba(100, 100, 100, .01) 96%, rgba(100, 100, 100, .1) 99%), linear-gradient(to bottom, #F6F6F6, #DDD);
+    background-repeat: no-repeat, no-repeat, no-repeat
+}
+
+.quickActionsContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../html5/applications/m5/views/core/timelines/assets/dotted-pattern.png);
+    background-repeat: repeat;
+    -webkit-background-size: 4px 4px;
+    background-size: 4px 4px
+}
+
+.stream-item[actions=true] {
+    position: relative
+}
+
+.tweetAction {
+    display: inline-block;
+    width: 24px;
+    height: 22px
+}
+
+.tweetAction.fav {
+    width: 20px
+}
+
+.tweetAction.retweet {
+    width: 30px
+}
+
+.tweetAction.delete {
+    width: 16px
+}
+
+.stream-item[actions=true]>.stream-item-wrapper,
+.stream-tweet[actions=true]>.stream-item-wrapper,
+.stream-tweet[actions=true]>.tweet-dogear {
+    visibility: hidden
+}
+
+.quickAction {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.quickAction.delete {
+    display: none
+}
+
+.stream-item[removable=true] .quickAction.delete {
+    display: block
+}
+
+avatar {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #EEE
+}
+
+.conversation-focal.first:before,
+.conversation-focal:after,
+.conversation-stub.first:before,
+.conversation-stub.last:after,
+.conversation-stub[reply=true] .extra-icons .reply-icon,
+.conversations-stream .dedupped {
+    display: none
+}
+
+.conversations-stream .conversation .stream-tweet:first-child {
+    border-top: 0
+}
+
+.conversations-stream .conversation-stub.last {
+    border-bottom: 1px solid #EEE
+}
+
+.conversations-stream .stream-items .stream-tweet .twitter-atreply,
+.conversations-stream .stream-items .stream-tweet .twitter-hashtag,
+.conversations-stream .stream-items .stream-tweet .twitter-timeline-link {
+    pointer-events: none;
+    color: inherit
+}
+
+.conversations-stream .tweet-item .social-context-icon-block {
+    width: 58px
+}
+
+.conversations-stream .stream-tweet .tweet-content {
+    margin-left: 10px
+}
+
+.conversations-stream .stream-tweet .stream-item-wrapper {
+    padding: 12px 12px 14px
+}
+
+.conversations-stream .conversation-stub .stream-item-wrapper {
+    padding: 10px 12px
+}
+
+.conversations-stream .conversation-focal .stream-item-wrapper {
+    padding-top: 10px
+}
+
+.conversations-stream .first .stream-item-wrapper {
+    padding-top: 12px
+}
+
+.conversations-stream .quick-actions-drawer,
+.conversations-stream .quickActions {
+    z-index: 1
+}
+
+.conversation-focal,
+.conversation-stub {
+    position: relative;
+    background: #fff;
+    overflow: hidden
+}
+
+.conversation-stub:after,
+.conversation-stub:before {
+    position: absolute;
+    top: 0;
+    left: 33px;
+    width: 3px;
+    background: #55acee;
+    height: 8px;
+    content: '';
+    z-index: 0
+}
+
+.conversation-stub:before {
+    border-radius: 0 0 3px 3px/0 0 8px 8px
+}
+
+.conversation-stub:after {
+    border-radius: 3px 3px 0 0/8px 8px 0 0;
+    top: 60px;
+    height: 100%
+}
+
+.conversation-stub.first:after {
+    border-radius: 3px 3px 0 0/8px 8px 0 0;
+    height: 100%;
+    top: 62px
+}
+
+.conversation-stub.reduced:after,
+.conversation-stub.reduced:before {
+    left: 41px
+}
+
+.conversation-stub.reduced:after {
+    top: 44px
+}
+
+.conversation-stub.reduced.first:after {
+    top: 46px
+}
+
+.conversation-stub.first.collapsed:after {
+    margin-top: 21px
+}
+
+.stream-item-selected .conversation-stub,
+.stream-item-selected .conversation-stub .full-name,
+.stream-item-selected .conversation-stub .tweet-row {
+    background: #45A3E5;
+    color: #fff
+}
+
+.conversation-stub .tweet-content {
+    min-height: 0
+}
+
+.conversation-stub .avatar,
+.conversation-stub .tweet-image,
+.conversation-stub avatar {
+    z-index: 1
+}
+
+.conversation-stub .avatar,
+.conversation-stub avatar {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-radius: 5px;
+    position: relative
+}
+
+.conversation-stub {
+    min-height: 48px
+}
+
+.conversation-stub .tweet-text {
+    margin-top: -1px
+}
+
+.conversation-view-more {
+    padding: 4px 0 4px 68px;
+    min-height: 20px
+}
+
+.conversation-view-more span {
+    line-height: 22px;
+    color: #0084b4
+}
+
+.conversation-view-more:before {
+    height: 6px
+}
+
+.conversation-view-more.reduced:after,
+.conversation-view-more:after {
+    top: 23px
+}
+
+.conversation-view-more .vellip,
+.conversation-view-more .vellip:after,
+.conversation-view-more .vellip:before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: '';
+    z-index: 0;
+    border-radius: 3px;
+    width: 3px;
+    height: 3px;
+    background: #55acee;
+    border-width: 0
+}
+
+.conversation-view-more .vellip {
+    left: 33px
+}
+
+.conversation-view-more.reduced .vellip {
+    left: 41px
+}
+
+.conversation-view-more .vellip:after {
+    top: 4px
+}
+
+.conversation-view-more .vellip:before {
+    top: 8px
+}
+
+.conversations-stream .conversation-ancestor.reduced .social-context-icon-block {
+    width: 32px
+}
+
+.conversations-stream .conversation-ancestor.reduced .stream-item-wrapper {
+    padding-left: 26px
+}
+
+.conversation-ancestor.reduced .avatar,
+.conversation-ancestor.reduced .tweet-image,
+.conversation-ancestor.reduced avatar {
+    height: 32px;
+    width: 32px
+}
+
+.conversation-focal.blue_bottle {
+    border-color: #dfeef7
+}
+
+.conversations-stream .conversation-stub.blue_bottle,
+.conversations-stream .conversation-stub.blue_bottle .full-name {
+    color: #333
+}
+
+.tweet-stream .conversation-stub.blue_bottle {
+    background: #f5f8fa
+}
+
+.conversation-focal.blue_bottle:not(.dedupped)+.conversation-stub.first {
+    position: relative;
+    margin-top: 4px
+}
+
+.conversation-focal.blue_bottle:not(.dedupped)+.conversation-stub.first:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    top: -4px;
+    left: 0;
+    background: #fff;
+    border-width: 0;
+    border-bottom: 1px solid #dfeef7;
+    display: block
+}
+
+.conversations-stream .stream-tweet.inline-engagement-exp>.stream-item-wrapper>.tweet-body {
+    padding-bottom: 0
+}
+
+.conversations-stream .inline-engagement-exp.conversation-ancestor.reduced>.stream-item-wrapper>.tweet-body {
+    padding-left: 0
+}
+
+.conversations-stream .conversation-stub.inline-engagement-exp .tweet-text .tweet-text-inner {
+    padding-bottom: 10px
+}
+
+.conversations-stream .stream-tweet.inline-engagement-exp>.stream-item-wrapper {
+    padding-top: 12px
+}
+
+.conversations-stream .inline-engagement-exp.conversation-stub>.stream-item-wrapper {
+    padding-top: 10px
+}
+
+.conversations-stream .inline-engagement-exp.first>.stream-item-wrapper {
+    padding-top: 12px
+}
+
+.conversations-stream .stream-tweet.inline-engagement-exp[favorited=true]>.tweet-dogear,
+.conversations-stream .stream-tweet.inline-engagement-exp[retweeted=true]>.tweet-dogear {
+    display: block
+}
+
+.tweet-stream .stream-tweet {
+    background-color: #fff
+}
+
+.tweet-stream .empty-stream:first-child,
+.tweet-stream .stream-end.stream-item-group-start,
+.tweet-stream .stream-gap.stream-item-group-start,
+.tweet-stream .stream-highlight.stream-item-group-start,
+.tweet-stream .stream-tweet.stream-item-group-start,
+.tweet-stream .stream-tweet:first-child,
+.tweet-stream .user-item.stream-item-group-start {
+    border-top: 1px solid #E6E6E6
+}
+
+.tweet-stream .stream-gap.stream-item-group-end,
+.tweet-stream .stream-highlight.stream-item-group-end,
+.tweet-stream .stream-tweet.stream-item-group-end,
+.tweet-stream .user-item.stream-item-group-end,
+.tweet-stream:last-child .no-end-item .stream-tweet:last-child {
+    border-bottom: 1px solid #E6E6E6
+}
+
+.tweet-stream:last-child .stream-gap.stream-item-group-end,
+.tweet-stream:last-child .stream-highlight.stream-item-group-end,
+.tweet-stream:last-child .stream-tweet.stream-item-group-end,
+.tweet-stream:last-child .user-item.stream-item-group-end {
+    margin-bottom: 3px
+}
+
+.tweet-stream:last-child .stream-tweet.stream-item-group-end:last-child,
+.tweet-stream:last-child .user-item.stream-item-group-end:last-child {
+    margin-bottom: 0
+}
+
+.tweet-stream .empty-stream,
+.tweet-stream .stream-end {
+    border-bottom: 1px solid #E6E6E6;
+    background: #fff
+}
+
+.module-wrapper.tweet-stream .stream-wrapper>.no-end-item>.empty-stream,
+.module-wrapper.tweet-stream .stream-wrapper>.no-end-item>.loading-item,
+.module-wrapper.tweet-stream .stream-wrapper>.no-end-item>.stream-tweet:last-child,
+.module.stream-item .stream-items>.stream-item-group-end,
+.module>.stream-item:last-child {
+    border-bottom: none
+}
+
+.module .stream-items>.stream-item:first-child,
+.module.stream-item .stream-items>.stream-item-group-start {
+    border-top: none
+}
+
+.stream-items .stream-item:not(.expanded) .twitter-atreply,
+.stream-items .stream-item:not(.expanded) .twitter-hashtag,
+.stream-items .stream-item:not(.expanded) .twitter-timeline-link {
+    pointer-events: none;
+    color: inherit
+}
+
+.stream-tweet {
+    font-size: 14px;
+    line-height: 18px
+}
+
+.stream-tweet>.stream-item-wrapper {
+    padding: 10px 10px 14px
+}
+
+.stream-item-wrapper .tweet-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 18px;
+    overflow: hidden
+}
+
+.stream-tweet[favorited=true],
+.stream-tweet[retweeted=true] {
+    position: relative
+}
+
+.stream-tweet[favorited=true] .tweet-row,
+.stream-tweet[retweeted=true] .tweet-row {
+    padding-right: 5px
+}
+
+.tweet-dogear {
+    height: 25px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+    display: none
+}
+
+.stream-tweet[favorited=true]>.tweet-dogear,
+.stream-tweet[retweeted=true]>.tweet-dogear {
+    display: block
+}
+
+.stream-tweet .user-name {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #999;
+    margin-right: 5px
+}
+
+.stream-tweet .full-name {
+    display: inline;
+    max-width: 100%
+}
+
+.stream-item.stream-item-selected .badge-tweet-text,
+.stream-item.stream-item-selected .full-name,
+.stream-item.stream-item-selected .screen-name,
+.stream-item.stream-item-selected .social,
+.stream-item.stream-item-selected .social-context-text,
+.stream-item.stream-item-selected .timestamp,
+.stream-item.stream-item-selected .tweet-text,
+.stream-item.stream-item-selected .user-name {
+    background: #45a3e5;
+    color: #FFF!important;
+    text-shadow: none!important
+}
+
+.label.fav,
+.label.rt,
+.label.unfav,
+.label.unrt {
+    display: none
+}
+
+.stream-item[favorited=true] .label.unfav,
+.stream-item[favorited=false] .label.fav,
+.stream-item[retweeted=true] .label.unrt,
+.stream-item[retweeted=false] .label.rt {
+    display: inline
+}
+
+.details-pane[deleted=true] .delete-action {
+    opacity: .3
+}
+
+.stream-gap {
+    background-color: #eee
+}
+
+.stream-gap-inner {
+    border-style: solid;
+    border-color: transparent;
+    -webkit-border-image: url(../html5/applications/m5/views/core/timelines/assets/list-crimp-border@2x.png) 24 0 24 0 repeat;
+    -o-border-image: url(../html5/applications/m5/views/core/timelines/assets/list-crimp-border@2x.png) 24 0 24 0 repeat;
+    border-image: url(../html5/applications/m5/views/core/timelines/assets/list-crimp-border@2x.png) 24 0 24 0 repeat;
+    border-width: 12px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0;
+    text-align: center
+}
+
+.stream-gap.stream-item-group-start .stream-gap-inner {
+    border-top-width: 0;
+    padding-top: 8px
+}
+
+.stream-gap.stream-item-group-end .stream-gap-inner {
+    border-bottom-width: 0;
+    padding-bottom: 8px
+}
+
+.stream-gap .spinner {
+    width: 19px;
+    height: 19px;
+    display: none
+}
+
+.stream-gap .gap-text {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #999;
+    text-shadow: #fff 0 1px
+}
+
+.stream-gap.loading .spinner {
+    display: inline-block
+}
+
+.stream-gap.loading .gap-text {
+    display: none
+}
+
+.media-indicator-container {
+    margin-left: 48px;
+    padding: 0 8px 10px 18px;
+    height: 160px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: block
+}
+
+.card-preview,
+.tweet-row .social-context {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row
+}
+
+.stream-tweet.media-forward .media-indicator {
+    display: block;
+    background: url(../html5/applications/m5/assets/sprite_media.png) -213px -144px no-repeat;
+    -webkit-background-size: 213px 144px;
+    background-size: 213px 144px;
+    width: 70px;
+    height: 71px
+}
+
+.stream-tweet.media-forward[data-media-forward-status=complete] .media-indicator {
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+    background-position: center top
+}
+
+.stream-tweet.media-forward[data-media-forward-type=photo][data-media-forward-status=loading] .media-indicator {
+    background-position: 0 -72px
+}
+
+.stream-tweet.media-forward[data-media-forward-type=photo][data-media-forward-status=error] .media-indicator {
+    background-position: -71px -72px
+}
+
+.stream-tweet.media-forward[data-media-forward-type=player] .media-indicator .status {
+    background: url(../html5/applications/m5/assets/sprite_media.png) -213px -144px no-repeat;
+    -webkit-background-size: 213px 144px;
+    background-size: 213px 144px;
+    width: 70px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -36px
+}
+
+.stream-tweet.media-forward[data-media-forward-type=player][data-media-forward-status=loading] .media-indicator .status {
+    background-position: -71px 0
+}
+
+.stream-tweet.media-forward[data-media-forward-type=player][data-media-forward-status=error] .media-indicator .status {
+    background-position: -142px 0
+}
+
+.stream-tweet.media-forward[data-media-forward-type=player][data-media-forward-status=complete] .media-indicator .status {
+    background-position: 0 0
+}
+
+.stream-item .tweet-label {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 3px
+}
+
+.stream-item[label=alert] .alert-label,
+.stream-item[label=promoted] .promoted-label,
+.stream-item[label=political] .promoted-label {
+    display: block
+}
+
+.details-pane[label=alert] .badge-tweet-alert,
+.details-pane[label=promoted] .badge-tweet-promoted,
+.details-pane[label=political] .badge-tweet-political,
+.stream-item[label=alert] .badge-tweet-alert,
+.stream-item[label=promoted] .badge-tweet-promoted,
+.stream-item[label=political] .badge-tweet-political {
+    display: inline-block
+}
+
+.samples .avatar {
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.samples {
+    white-space: nowrap;
+    width: 1px
+}
+
+.linkified .twitter-media,
+.linkified .twitter-timeline-link.activeLink {
+    pointer-events: auto!important;
+    color: #2477b3!important
+}
+
+.card-preview {
+    border-top: 1px solid #E6E6E6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 10px 0 0;
+    margin: 7px 0 0
+}
+
+.card-preview-body {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-top: -3px
+}
+
+.card-preview h3 {
+    font-size: 12px;
+    line-height: 16px;
+    color: #333
+}
+
+.card-preview .author,
+.card-preview .source {
+    padding: 4px 0 5px
+}
+
+.card-preview .source {
+    color: #999;
+    line-height: 14px;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.card-preview .avatar {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px
+}
+
+.card-preview .user-name {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap
+}
+
+.card-preview .user-name .full-name {
+    font-size: 12px;
+    color: #999;
+    font-weight: 400
+}
+
+.card-preview-thumbnail-image {
+    max-width: 60px;
+    max-height: 60px;
+    display: block;
+    margin-left: 8px
+}
+
+.pivot-topics {
+    overflow: hidden;
+    margin-top: 2px
+}
+
+.pivot-topic-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    float: left;
+    overflow: hidden;
+    margin: 6px 6px 0 0;
+    border-radius: 2px
+}
+
+.pivot-topic,
+.pivot-topic-feedback {
+    display: block
+}
+
+.pivot-topic-feedback,
+.pivot-topic-label {
+    line-height: 22px
+}
+
+.pivot-topic {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    font-size: 12px
+}
+
+.pivot-topic-label {
+    display: inline-block;
+    float: left;
+    padding: 0 6px 0 0;
+    background-color: #EEE;
+    color: #999
+}
+
+.pivot-topic-label:first-child {
+    padding-left: 6px
+}
+
+.pivot-topic-label:after {
+    content: ' ';
+    display: inline-block;
+    background: url(../html5/applications/m5/assets/topic_label_sprite.png) no-repeat;
+    -webkit-background-size: 10px 23px;
+    background-size: 10px 23px;
+    width: 6px;
+    height: 22px;
+    margin: 0 0 0 6px;
+    vertical-align: top
+}
+
+.pivot-topic-label:last-child:after {
+    display: none
+}
+
+.pivot-topic:active .pivot-topic-label {
+    color: #898989;
+    background-color: #D6D6D6
+}
+
+.pivot-topic-feedback {
+    width: 22px;
+    background-color: #D6D6D6;
+    color: #FFF;
+    text-align: center
+}
+
+.pivot-topic-feedback:active {
+    background-color: silver
+}
+
+.pivot-topic-wrapper.good .pivot-topic-feedback {
+    background-color: #9E7;
+    color: #060
+}
+
+.pivot-topic-wrapper.bad .pivot-topic-feedback {
+    background-color: #E30;
+    color: #FFF
+}
+
+.pivot-topic-feedback i {
+    position: relative;
+    top: 1px
+}
+
+.tweet-label {
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    display: inline-block;
+    text-decoration: none
+}
+
+i.badge-tweet {
+    margin-top: 1px;
+    vertical-align: text-bottom
+}
+
+i.badge-tweet-alert,
+i.badge-tweet-political,
+i.badge-tweet-promoted {
+    display: none
+}
+
+.tweet .user,
+.tweet-row .social-context {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-sizing: border-box
+}
+
+.alert-label,
+.promoted-label {
+    color: #999
+}
+
+.tweet-row .social-context {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 6px
+}
+
+.tweet-row .social-context-icon-block {
+    width: 48px;
+    text-align: right;
+    display: block
+}
+
+.tweet-row .social-context-text {
+    margin-left: 8px;
+    display: block
+}
+
+.tweet-image {
+    text-align: right;
+    overflow: hidden;
+    height: 48px;
+    width: 48px
+}
+
+.place,
+.place a,
+.timestamp {
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 14px;
+    margin-top: 11px
+}
+
+.tweet-row .timestamp {
+    color: #ccc;
+    margin-top: 2px
+}
+
+.timestamp-content {
+    font-size: 14px;
+    line-height: 18px;
+    color: #999
+}
+
+.timestamp .ampm {
+    font-size: 11px
+}
+
+.details-pane .tweet-row {
+    line-height: 18px
+}
+
+.details-pane .tweet {
+    position: relative;
+    font-size: 14px;
+    padding: 10px 10px 14px
+}
+
+.details-pane .tweet s {
+    opacity: .6
+}
+
+.details-pane[can_translate=true] .translate-icon {
+    display: inline-block
+}
+
+.tweet .user {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative
+}
+
+.details-pane .tweet-actions,
+.stream-tweet.inline-engagement-exp .tweet-last {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal
+}
+
+.tweet .user .avatar {
+    margin-right: 8px;
+    vertical-align: top
+}
+
+.tweet .user-info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.user-info .full-name {
+    overflow: hidden;
+    vertical-align: top;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%
+}
+
+.user-info .screen-name {
+    font-size: 12px;
+    line-height: 130%
+}
+
+.details-pane .tweet .tweet-text {
+    font: normal normal normal 18px/24px Georgia, Palatino, 'Helvetica Neue', Helvetica, Arial, sans-serif!important;
+    margin-top: 6px
+}
+
+a.translation-link {
+    font-size: normal normal normal 12px/15px 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+    color: #999;
+    padding-top: 5px
+}
+
+.tweet-actions-box {
+    margin: 0 10px;
+    border-top: 1px solid #E8E8E8
+}
+
+.details-pane .tweet-actions {
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 13px;
+    overflow: hidden
+}
+
+.tweet-action {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    text-align: center;
+    color: #999
+}
+
+.details-pane .tweet-actions .icon,
+.tweet-actions .delete-action {
+    display: none
+}
+
+.details-pane .tweet-action:active {
+    background: #EEE
+}
+
+.tweet-actions .icon {
+    margin: 11px 0;
+    width: 24px;
+    height: 22px
+}
+
+.tweet-actions .icon.fav-icon,
+.tweet-actions .icon.unfav-icon {
+    width: 20px
+}
+
+.tweet-actions .icon.delete-icon {
+    width: 16px
+}
+
+.tweet-actions .icon.more-icon,
+.tweetAction.more {
+    width: 31px;
+    height: 20px
+}
+
+.tweet-actions .retweet-action .retweet-icon,
+.tweet-actions .retweet-action .unretweet-icon {
+    width: 30px
+}
+
+.tweet-actions .reply-action .reply-icon {
+    margin-left: 3px;
+    margin-right: 0
+}
+
+.details-pane .tweet-actions .delete-icon,
+.details-pane .tweet-actions .more-icon,
+.details-pane .tweet-actions .reply-icon,
+.details-pane[favorited=true] .tweet-actions .unfav-icon,
+.details-pane[favorited=false] .tweet-actions .fav-icon,
+.details-pane[retweeted=true] .tweet-actions .unretweet-icon,
+.details-pane[retweeted=false] .tweet-actions .retweet-icon {
+    display: inline-block
+}
+
+.details-pane[removable=true] .tweet-actions .delete-action {
+    border-right: none;
+    display: block
+}
+
+.details-pane[removable=false] .tweet-actions .favorite-action {
+    border-right: none
+}
+
+.stream-tweet.inline-engagement-exp>.stream-item-wrapper {
+    padding: 10px 0 0
+}
+
+.stream-tweet.inline-engagement-exp[data-scribe-item-pre-expanded=true]>.stream-item-wrapper {
+    padding-bottom: 14px
+}
+
+.stream-tweet.inline-engagement-exp .all-actions-labels {
+    padding-left: 42px;
+    margin: 3px 0 6px;
+    line-height: 15px
+}
+
+.stream-tweet.inline-engagement-exp .all-actions-labels .badge-tweet-text {
+    padding-left: 4px
+}
+
+.stream-tweet.inline-engagement-exp>.stream-item-wrapper>.tweet-body {
+    padding: 0 0 2px 10px
+}
+
+.stream-tweet.inline-engagement-exp>.stream-item-wrapper>.tweet-body .tweet-content .tweet-row {
+    padding-right: 10px
+}
+
+.stream-tweet.inline-engagement-exp.inline-engagement-exp-follow>.stream-item-wrapper>.tweet-body .tweet-content .tweet-row {
+    padding-right: 70px
+}
+
+.stream-tweet.inline-engagement-exp .social-context {
+    padding-left: 10px
+}
+
+.stream-tweet.inline-engagement-exp .social-context-buffer {
+    height: 14px;
+    min-height: 14px
+}
+
+.stream-tweet.inline-engagement-exp>.stream-item-wrapper>.tweet-body .extra-icons {
+    display: none
+}
+
+.stream-tweet.convo-engagement-exp .tweet-actions .icon.reply-icon,
+.stream-tweet.inline-engagement-exp .tweet-actions .icon,
+.stream-tweet.inline-engagement-exp-all .tweet-actions .icon.follow-icon,
+.stream-tweet.inline-engagement-exp-all .tweet-actions .icon.more,
+.stream-tweet.inline-engagement-exp-all .tweet-actions .icon.reply-icon,
+.stream-tweet.inline-engagement-exp-favs[favorited=true] .tweet-actions .favorite-on-icon,
+.stream-tweet.inline-engagement-exp-favs[favorited=false] .tweet-actions .favorite-off-icon,
+.stream-tweet.inline-engagement-exp-reply .tweet-actions .icon.reply-icon,
+.stream-tweet.inline-engagement-exp-retweet[retweeted=true] .tweet-actions .retweet-icon,
+.stream-tweet.inline-engagement-exp-retweet[retweeted=false] .tweet-actions .unretweet-icon {
+    display: inline-block
+}
+
+.stream-tweet.inline-engagement-exp .tweet-actions .icon,
+.stream-tweet.inline-engagement-exp .tweet-dogear {
+    display: none
+}
+
+.stream-tweet.inline-engagement-exp .tweet-content>.tweet-text {
+    position: relative;
+    min-height: 44px
+}
+
+.stream-tweet.inline-engagement-exp.inline-engagement-exp-all .tweet-content>.tweet-text {
+    min-height: 0
+}
+
+.stream-tweet.inline-engagement-exp .tweet-text .tweet-text-inner {
+    margin-right: 38px;
+    padding-bottom: 14px
+}
+
+.stream-tweet.inline-engagement-exp.inline-engagement-exp-all .tweet-text .tweet-text-inner {
+    padding-bottom: 2px
+}
+
+.stream-tweet.inline-engagement-exp-reply .tweet-text .tweet-text-inner {
+    margin-right: 39px
+}
+
+.stream-tweet.inline-engagement-exp-retweet .tweet-text .tweet-text-inner {
+    margin-right: 44px
+}
+
+.stream-tweet.inline-engagement-exp-all .tweet-text .tweet-text-inner {
+    margin-right: 10px
+}
+
+.view-connect .stream-tweet.inline-engagement-exp-all .tweet-text .tweet-text-inner {
+    margin-right: 60px
+}
+
+.stream-tweet.inline-engagement-exp[data-scribe-item-pre-expanded=true] .tweet-text .tweet-text-inner {
+    padding-bottom: 0
+}
+
+.stream-tweet.inline-engagement-exp .inline-fav,
+.stream-tweet.inline-engagement-exp .inline-follow,
+.stream-tweet.inline-engagement-exp .inline-reply,
+.stream-tweet.inline-engagement-exp .inline-retweet {
+    position: absolute;
+    display: block;
+    margin: 0 0 0 40px;
+    bottom: 0;
+    right: 0
+}
+
+.stream-tweet.inline-engagement-exp .inline-follow {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 60px;
+    top: 0;
+    bottom: auto;
+    margin-top: -37px
+}
+
+.view-connect .stream-tweet.inline-engagement-exp .inline-follow {
+    margin-top: -16px
+}
+
+.stream-tweet.inline-engagement-exp .inline-follow .button {
+    padding: 3px 5px 4px 7px
+}
+
+.related-tweets .stream-tweet.inline-engagement-exp-follow .tweet-text .tweet-text-inner,
+.replies-stream .stream-tweet.inline-engagement-exp-follow .tweet-text .tweet-text-inner {
+    margin-right: 10px
+}
+
+.related-tweets .stream-tweet.inline-engagement-exp .inline-follow,
+.replies-stream .stream-tweet.inline-engagement-exp .inline-follow {
+    display: none
+}
+
+.stream-tweet.inline-engagement-exp .tweet-last {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: flex
+}
+
+.stream-tweet.inline-engagement-exp-all .timestamp {
+    margin-top: 11px;
+    font-size: 14px
+}
+
+.stream-tweet.inline-engagement-exp-all .all-actions-badges {
+    margin: 3px 0 6px 36px;
+    line-height: 15px
+}
+
+.stream-tweet.inline-engagement-exp .tweet-last .tweet-last-el {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.stream-tweet.inline-engagement-exp.inline-engagement-exp-all-flipped .tweet-last .tweet-last-el {
+    text-align: right
+}
+
+.module-button,
+.zerorate-media .buttons {
+    text-align: center
+}
+
+.stream-tweet.inline-engagement-exp .tweet-last .inline-all .tweet-actions {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 140px;
+    margin-left: auto
+}
+
+.stream-tweet.inline-engagement-exp.inline-engagement-exp-all-flipped .tweet-last .inline-all .tweet-actions {
+    margin-left: -18px
+}
+
+.stream-tweet.inline-engagement-exp-all.inline-engagement-exp-all-flipped .timestamp {
+    padding-right: 10px
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .tweet-actions .tweet-action {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    vertical-align: middle
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .tweet-actions .tweet-action i {
+    margin-top: 0
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .tweet-action,
+.stream-tweet.inline-engagement-exp .inline-fav .tweet-action,
+.stream-tweet.inline-engagement-exp .inline-reply .tweet-action,
+.stream-tweet.inline-engagement-exp .inline-retweet .tweet-action {
+    padding: 12px 10px 14px 12px
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .tweet-action {
+    padding-bottom: 10px
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .tweet-action[action=favorite] {
+    padding-top: 8px
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .tweet-action[action=reply] {
+    padding-top: 10px
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .tweet-action[action=retweet] {
+    padding-top: 11px
+}
+
+.stream-tweet.inline-engagement-exp[data-scribe-item-pre-expanded=true] .inline-all .tweet-action,
+.stream-tweet.inline-engagement-exp[data-scribe-item-pre-expanded=true] .inline-fav .tweet-action,
+.stream-tweet.inline-engagement-exp[data-scribe-item-pre-expanded=true] .inline-reply .tweet-action,
+.stream-tweet.inline-engagement-exp[data-scribe-item-pre-expanded=true] .inline-retweet .tweet-action {
+    padding-bottom: 0
+}
+
+.stream-tweet.inline-engagement-exp .inline-all .icon,
+.stream-tweet.inline-engagement-exp .inline-fav .icon,
+.stream-tweet.inline-engagement-exp .inline-reply .icon,
+.stream-tweet.inline-engagement-exp .inline-retweet .icon {
+    margin-bottom: 0
+}
+
+.inline-fav .tweet-actions i,
+.inline-reply .tweet-actions i,
+.inline-retweet .tweet-actions i {
+    background: url(../html5/applications/m5/views/core/timelines/assets/inline-social.png) no-repeat
+}
+
+.inline-all .tweet-actions i {
+    background: url(../html5/applications/m5/views/core/timelines/assets/inline-social-small.png) no-repeat
+}
+
+.inline-all .tweet-actions i.icon.more {
+    -webkit-background-size: 271px 236px;
+    background: url(../html5/applications/m5/assets/sprite_mobile.png) no-repeat
+}
+
+.inline-fav .tweet-actions i,
+.inline-reply .tweet-actions i,
+.inline-retweet .tweet-actions i {
+    -webkit-background-size: 92px, 67px;
+    background-size: 92px, 67px
+}
+
+.inline-all .tweet-actions i {
+    -webkit-background-size: 112px, 40px;
+    background-size: 112px, 40px
+}
+
+.inline-fav .tweet-actions i.favorite-off-icon {
+    background-position: 0 0;
+    width: 22px;
+    height: 22px
+}
+
+.inline-all .tweet-actions i.favorite-off-icon {
+    background-position: 2px 0;
+    width: 24px;
+    height: 18px
+}
+
+.inline-fav .tweet-actions i.favorite-on-icon {
+    background-position: -24px 0;
+    width: 22px;
+    height: 22px
+}
+
+.inline-all .tweet-actions i.favorite-on-icon {
+    background-position: -26px 0;
+    width: 24px;
+    height: 18px
+}
+
+.inline-retweet .tweet-actions i.retweet-icon {
+    background-position: -2px -24px;
+    width: 30px;
+    height: 17px;
+    margin-right: -4px
+}
+
+.inline-all .tweet-actions i.retweet-icon {
+    background-position: -58px -22px;
+    width: 24px;
+    height: 18px;
+    margin-right: -7px
+}
+
+.inline-retweet .tweet-actions i.unretweet-icon {
+    background-position: -50px -3px;
+    width: 30px;
+    height: 17px;
+    margin-right: -4px
+}
+
+.inline-all .tweet-actions i.unretweet-icon {
+    background-position: -30px -22px;
+    width: 24px;
+    height: 18px;
+    margin-right: -7px
+}
+
+.inline-reply .tweet-actions i.reply-icon {
+    background-position: -2px -44px;
+    width: 24px;
+    height: 18px
+}
+
+.inline-all .tweet-actions i.reply-icon {
+    background-position: 0 -20px;
+    width: 24px;
+    height: 18px
+}
+
+.inline-all .tweet-actions .tweet-action i.more {
+    background-position: -260px -120px;
+    width: 24px;
+    height: 18px
+}
+
+.inline-all .tweet-actions i.follow-icon {
+    background-position: -60px -44px;
+    width: 30px;
+    height: 20px
+}
+
+.media {
+    display: none;
+    margin: 0 10px
+}
+
+.tweet-media {
+    padding: 0 10px 10px
+}
+
+.zerorate-media {
+    background-color: #F5F5F5;
+    padding: 5px;
+    margin: 10px 0
+}
+
+.zerorate-media .button {
+    max-width: 120px
+}
+
+.tweet-stats {
+    display: none;
+    padding: 0 10px;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 11px
+}
+
+.tweet-stat-count {
+    font-weight: 700;
+    color: #666
+}
+
+.tweet-stat {
+    display: inline-block;
+    padding: 10px 5px 10px 0;
+    color: #999;
+    text-transform: uppercase
+}
+
+.tweet-inline-reply {
+    padding: 10px;
+    background: #F6F6F6;
+    border-top: 1px solid #E6E6E6
+}
+
+.tweet-inline-reply .placeholder {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #FFF;
+    color: #999;
+    font: normal normal normal 14px/16px 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+    overflow: hidden;
+    padding: 8px;
+    width: 100%;
+    height: auto
+}
+
+.tweet-inline-reply .screen-name {
+    color: #2477b3
+}
+
+.tweet-stream .quoted-tweet {
+    margin-top: 8px;
+    padding: 4px 0 4px 8px;
+    font-size: 85%;
+    border-left: 3px solid #f4f4f4;
+    display: inline-block
+}
+
+.tweet-stream .quoted-tweet .tweet-text,
+.tweet-stream .quoted-tweet .user {
+    line-height: 16px;
+    font-size: 12px
+}
+
+.tweet-stream .quoted-tweet .user-info,
+.tweet-stream .quoted-tweet .user-name {
+    display: inline-block;
+    margin-right: 0
+}
+
+.tweet-stream .quoted-tweet .user-info .full-name,
+.tweet-stream .quoted-tweet .user-info .screen-name,
+.tweet-stream .quoted-tweet .user-name .full-name,
+.tweet-stream .quoted-tweet .user-name .screen-name {
+    line-height: 16px;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 400
+}
+
+.view-tweet .quoted-tweet {
+    border-left: 3px solid #E8E8E8;
+    margin: 10px 0 4px;
+    padding: 4px 0 4px 8px;
+    font-size: 90%
+}
+
+.view-tweet .quoted-tweet .user {
+    line-height: 16px;
+    font-size: 12px
+}
+
+.view-tweet .quoted-tweet .user-info {
+    display: inline-block
+}
+
+.view-tweet .quoted-tweet .timestamp,
+.view-tweet .quoted-tweet .user-info .full-name,
+.view-tweet .quoted-tweet .user-info .screen-name {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 12px
+}
+
+.debug-list,
+.view-tweet .has-quoted-tweet .card2,
+.view-tweet .replies .quoted-tweet,
+.view-tweet .repliesTo .quoted-tweet {
+    display: none
+}
+
+.view-tweet .quoted-tweet .quoted-tweet-text {
+    font-size: 12px;
+    line-height: 16px
+}
+
+.related-tweets .module-title {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px
+}
+
+.debug-link {
+    margin-right: 6px;
+    font-size: 12px;
+    color: #D93030
+}
+
+.debug-list {
+    margin-top: 14px;
+    border: 1px solid rgba(255, 0, 0, .15);
+    background-color: rgba(255, 0, 0, .1);
+    border-radius: 5px
+}
+
+.stream-item.debug .debug-list {
+    display: block
+}
+
+.debug-list .debug-line {
+    padding: 6px 8px;
+    border-bottom: 1px solid rgba(255, 0, 0, .15)
+}
+
+.debug-list .debug-line:last-child {
+    border-bottom: none
+}
+
+.link-item:not(:last-child),
+.module {
+    border-bottom: 1px solid #E6E6E6
+}
+
+view.page-view,
+views {
+    background: #EEE
+}
+
+body[status=loading] {
+    height: 100%;
+    width: 100%
+}
+
+.module {
+    border-top: 1px solid #E6E6E6;
+    margin-bottom: 3px;
+    background-color: #FFF
+}
+
+.recessed-container {
+    -webkit-box-shadow: rgba(0, 0, 0, .3) 0 1px 2px inset;
+    box-shadow: rgba(0, 0, 0, .3) 0 1px 2px inset;
+    background-color: #C2C2C2
+}
+
+.link-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 45px
+}
+
+.footer .link-item {
+    border-top: 1px solid #EEE
+}
+
+.sub-item {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.link-item.stretch {
+    display: block
+}
+
+.arrow-box,
+.wtf-boxes {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox
+}
+
+.link-item.merge {
+    border-bottom: none;
+    padding-bottom: 0
+}
+
+.module-title {
+    margin: 17px 10px 10px;
+    font-weight: 700;
+    text-shadow: #fff 0 1px 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #777
+}
+
+.link-item .link-text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden
+}
+
+.link-item .link-text-light {
+    font-weight: 400;
+    color: #999;
+    margin-right: 5px
+}
+
+.arrow-box {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.dark-arrow,
+.light-arrow,
+.white-arrow {
+    width: 8px;
+    height: 14px;
+    margin-top: 2px;
+    display: block
+}
+
+.module-wrapper>.module {
+    border-top: none
+}
+
+.module-button {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    border-left: none;
+    border-right: none;
+    background-color: #FFF;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    padding: 10px;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.wtf-boxes {
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 8px 0
+}
+
+.users-box-container {
+    margin-right: 8px
+}
+
+.discover-link {
+    margin-top: 3px
+}
+
+.story-image-container {
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center
+}
+
+.activity-item .tweet-image {
+    width: 20px
+}
+
+.activity-content .avatar,
+.activity-content .tweet-image,
+.profile-tweets-item .avatar {
+    width: 32px;
+    height: 32px
+}
+
+.activity-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 7px
+}
+
+.activity-item .tweet-text {
+    overflow: hidden
+}
+
+.activity-tweets,
+.activity-tweets .full-name,
+.activity-tweets .screen-name {
+    color: #999;
+    font-size: 12px
+}
+
+.stream-item-selected .activity-tweets,
+.stream-item-selected .activity-tweets.tweet-content .tweet-text {
+    color: #FFF
+}
+
+.navLabel,
+.profile-tweets-item .user-screen-name,
+div.link-text>span.events {
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.activity-tweets .full-name {
+    font-weight: 700
+}
+
+.activity-item .timestamp,
+.activity-tweet br {
+    display: none
+}
+
+.follow-activity .user-name .screen-name {
+    display: block
+}
+
+.navItems,
+.profile-tweets-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal
+}
+
+.view-activity .tweet-stream .user-item {
+    background-color: #fff
+}
+
+.profile-tweets-item {
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 8px 10px;
+    white-space: nowrap;
+    min-height: 0
+}
+
+.profile-tweets-item .user-thumb {
+    width: 32px;
+    height: 32px;
+    margin: 2px 5px 0 0
+}
+
+.profile-tweets-item .user-name-info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    padding: 0 0 5px;
+    vertical-align: top
+}
+
+.profile-tweets-item .full-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700
+}
+
+.profile-tweets-item .user-screen-name {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: -1px;
+    max-width: 110px
+}
+
+.profile-tweets-item[verified=true] .verified-icon {
+    display: inline-block
+}
+
+.savedsearch-item {
+    font-size: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 8px 10px
+}
+
+a.link-item.events {
+    padding-top: 8px;
+    padding-bottom: 0
+}
+
+a.link-item.events>div.arrow-box {
+    margin-top: -8px
+}
+
+div.link-text>span.events {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    height: 24px;
+    margin-right: 9px
+}
+
+.brandbar {
+    background-color: #5BABE5;
+    background-image: -webkit-linear-gradient(top, #5BABE5, #297CB7 36px, #297CB7);
+    background-image: linear-gradient(to bottom, #5BABE5, #297CB7 36px, #297CB7);
+    height: 36px
+}
+
+.brandbar .navItem {
+    height: 26px;
+    max-width: 42px;
+    display: inline-block;
+    padding: 2px 8px 0;
+    border: none
+}
+
+.navTitle {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: none;
+    text-align: left
+}
+
+.navTitle .title {
+    text-align: left;
+    vertical-align: top;
+    font-weight: 700
+}
+
+.navbar .title {
+    line-height: 27px
+}
+
+.navbar .navItem.glow {
+    background-image: url(../html5/applications/m5/assets/tab_glow.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    -webkit-background-size: 24px 3px;
+    background-size: 24px 3px
+}
+
+.navItem[nav=open-app] {
+    padding-right: 1px
+}
+
+.navItem[nav=open-app][applinks=false],
+.navItem[nav=share],
+.navItem[nav=share] span,
+.navItem[nav=share].share_string .navIcon,
+.share-nav .navItem[nav=compose],
+.share-nav .navItem[nav=search] {
+    display: none
+}
+
+.launchapp,
+.share-nav .navItem[nav=share],
+.share-nav .navItem[nav=share].share_string span {
+    display: inline-block
+}
+
+.share-nav .navItem[nav=share].share_string {
+    max-width: none;
+    padding-top: 0;
+    vertical-align: top
+}
+
+.share-nav .navItem[nav=share].share_string span {
+    padding: 5px 10px
+}
+
+.launchapp {
+    text-align: center;
+    width: 20px;
+    height: 21px;
+    margin-right: 10px
+}
+
+.brandmark.navIcon {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 20px;
+    width: 22px;
+    max-width: 22px
+}
+
+.brandbar .markread-icon,
+.brandbar .newdmIcon {
+    display: inline-block;
+    width: 26px;
+    height: 23px
+}
+
+.brandbar .button.back {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    margin: 2px 4px 0;
+    border: none;
+    background: 0 0;
+    width: 38px
+}
+
+.brandbar .button:active {
+    background: #297CB7
+}
+
+.navbar {
+    background-color: #000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+    background-image: -webkit-linear-gradient(top, #444, #000);
+    background-image: linear-gradient(to bottom, #444, #000);
+    border-top: 1px solid #1B1B1B;
+    overflow: hidden
+}
+
+.navItems {
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.navTitleBox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.navItem {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 160px;
+    height: 44px;
+    text-align: center;
+    display: block;
+    padding-top: 3px;
+    border-top: 1px solid #525252
+}
+
+.navbar .navItem {
+    min-width: 50px
+}
+
+.navItem.active {
+    background-color: #1c1c1c;
+    border-top: 1px solid #2D2D2D
+}
+
+.navPadding {
+    display: none
+}
+
+.navLabel {
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: -7px;
+    padding: 0 3px
+}
+
+.larry,
+.navIcon {
+    display: inline-block;
+    margin-top: 1px
+}
+
+.navItem.active .navLabel {
+    color: #FFF
+}
+
+.navItem.active.navRight {
+    background: rgba(255, 255, 255, .1);
+    border-bottom: 1px solid #161616
+}
+
+#logo {
+    display: inline-block
+}
+
+.larry {
+    height: 25px;
+    width: 25px
+}
+
+.signedout-header .navItem[nav=compose] {
+    display: none
+}
+
+.signedout-navbar .buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 4px
+}
+
+.signedout-navbar .buttons .button {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    max-width: 125px;
+    text-align: center;
+    margin: 6px
+}
+
+.slideshow-header,
+prompt .omniprompt {
+    -webkit-box-direction: normal;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    -webkit-box-orient: horizontal
+}
+
+.signedout-navbar .buttons .button.transparent {
+    background-color: #444;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#333));
+    background-image: -webkit-linear-gradient(top, #444, #333);
+    background-image: linear-gradient(to bottom, #444, #333);
+    color: #BBB;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .75);
+    border: 1px solid rgba(20, 20, 20, .6)
+}
+
+.slideshow-header,
+.slideshow-header .button.black {
+    background-color: #393939;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#575757), color-stop(50%, #4E4E4E), to(#393939));
+    background-image: -webkit-linear-gradient(top, #575757, #4E4E4E 50%, #393939);
+    background-image: linear-gradient(to bottom, #575757, #4E4E4E 50%, #393939)
+}
+
+.slideshow-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5px 0;
+    border-top: 1px solid #6E6E6E;
+    border-bottom: 1px solid #000;
+    height: 44px
+}
+
+.slideshow-header .title {
+    font-weight: 700
+}
+
+.slideshow-header .button.black:active {
+    background: #575757
+}
+
+header {
+    -webkit-box-shadow: rgba(0, 0, 0, .5) 0 1px 3px, rgba(0, 0, 0, .15) 0 -1px 0 inset;
+    box-shadow: rgba(0, 0, 0, .5) 0 1px 3px, rgba(0, 0, 0, .15) 0 -1px 0 inset;
+    width: 100%;
+    color: #FFF;
+    text-shadow: rgba(0, 0, 0, .5) 0 -1px 0
+}
+
+prompt {
+    display: none;
+    color: #000;
+    text-shadow: none
+}
+
+body[omniprompt=yes] prompt {
+    display: block;
+    background: #e8e8e8;
+    height: 55px;
+    width: 100%
+}
+
+body.no-omniprompt[omniprompt=yes] prompt,
+body[omniprompt=yes] brandbar .navIcon.openApp {
+    display: none
+}
+
+.profile .basics,
+prompt .omniprompt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox
+}
+
+body header.replying {
+    position: absolute
+}
+
+.profile-overview,
+body[omniprompt=yes] header.replying {
+    position: relative
+}
+
+prompt .omniprompt {
+    padding: 8px 10px 8px 4px;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.profile .basics,
+.profile .profile-counts {
+    -webkit-box-direction: normal;
+    -webkit-box-sizing: border-box
+}
+
+.omniprompt-child:nth-child(2) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.omniprompt-child {
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0 0 0 9px
+}
+
+p.omniprompt-child {
+    overflow: hidden;
+    white-space: nowrap
+}
+
+prompt .omniprompt-button,
+prompt .omniprompt-button:active {
+    background-color: #5babe5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#75c7f7), to(#208cc9));
+    background-image: -webkit-linear-gradient(top, #75c7f7, #208cc9);
+    background-image: linear-gradient(to bottom, #75c7f7, #208cc9);
+    color: #fff;
+    border-color: #0277b4;
+    max-width: none;
+    border-radius: 4px;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 15px;
+    vertical-align: top;
+    padding: 6px 9px 2px;
+    margin: 3px 0 0 9px
+}
+
+prompt .omniprompt-button .navIcon {
+    margin-top: -2px
+}
+
+prompt .dismiss-prompt {
+    padding: 2px 3px;
+    height: 12px;
+    width: 13px;
+    margin: 0
+}
+
+.omniprompt-title {
+    font-weight: 700
+}
+
+body[brandbar=none] brandbar,
+body[navbar=none] navbar {
+    display: none
+}
+
+body.no-omniprompt[brandbar=yes] views,
+views {
+    padding-top: 0
+}
+
+body[navbar=yes] views {
+    padding-top: 44px
+}
+
+body[brandbar=yes] views {
+    padding-top: 36px
+}
+
+body[navbar=yes][brandbar=yes] views {
+    padding-top: 80px
+}
+
+body[brandbar=yes][omniprompt=yes].no-navbar views,
+body[navbar=yes][brandbar=yes][omniprompt=yes] views {
+    padding-top: 0
+}
+
+.stream-highlight {
+    background-color: #fff
+}
+
+.stream-highlight.stream-item-selected .stream-tweet {
+    background-color: #45A3E5
+}
+
+.stream-highlight .link-item {
+    padding: 0 12px;
+    line-height: 44px;
+    background-color: #fff;
+    border-top: 1px solid #EEE
+}
+
+.stream-highlight.stream-item-selected .link-item {
+    color: #333
+}
+
+.screen-name {
+    color: #999;
+    text-align: left
+}
+
+.full-name {
+    color: #333;
+    font-size: 14px
+}
+
+.avatar {
+    background-color: #fff;
+    width: 48px;
+    height: 48px
+}
+
+.profile-overview {
+    border-bottom: solid 1px #E6E6E6;
+    background-color: #FFF;
+    z-index: 1
+}
+
+.profile-content {
+    padding: 3px 0 10px
+}
+
+.profile-content>.profile-similar-to-prompt-container .module-title {
+    margin-top: 10px
+}
+
+.profile .basics {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #434343;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .3)));
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .3));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .3));
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 1px 1px #000;
+    min-height: 160px;
+    width: 100%
+}
+
+.profile .basics .user {
+    white-space: nowrap
+}
+
+.profile .basics .avatar {
+    -webkit-box-shadow: rgba(0, 0, 0, .4) 0 0 1px;
+    box-shadow: rgba(0, 0, 0, .4) 0 0 1px;
+    height: 60px;
+    width: 60px;
+    border: 4px solid;
+    margin-right: 6px;
+    margin-left: 0
+}
+
+.profile .profile-counts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.profile-actions,
+.user-item .social-context {
+    -webkit-box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal
+}
+
+.profile .full-name-h2,
+.profile .full-name-h3 {
+    color: #FFF;
+    display: inline;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0
+}
+
+.profile .full-name-h3 {
+    line-height: 1em
+}
+
+.protected-icon {
+    display: none;
+    font-size: 0;
+    height: 10px;
+    vertical-align: baseline;
+    width: 8px;
+    margin-left: 2px
+}
+
+.verified-icon {
+    display: none;
+    height: 15px;
+    width: 15px;
+    margin-top: -5px
+}
+
+.basics .verified-icon {
+    vertical-align: text-bottom
+}
+
+.details-pane[protected=true] .protected-icon,
+.profile[protected=true] .basics .protected-icon,
+.profile[verified=true] .basics .verified-icon {
+    display: inline-block
+}
+
+.explain-protected-box {
+    background: #F4F4F4;
+    color: #333;
+    margin-bottom: 10px;
+    min-height: 60px;
+    padding: 15px
+}
+
+.protected-box-h1 {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 0 5px
+}
+
+.protected-box-p {
+    width: 85%
+}
+
+.profile-overview .user-info .screen-name {
+    font-size: 14px;
+    color: #FFF;
+    margin-top: -.25em;
+    text-align: center
+}
+
+.profile-overview .user-info .action {
+    font-size: 12px;
+    padding: 0;
+    color: #999
+}
+
+.full-profile {
+    display: none;
+    font-size: 14px;
+    padding-bottom: 2px
+}
+
+.details-view .full-profile {
+    display: inline-block
+}
+
+.profile-overview .bio {
+    font-size: 13px
+}
+
+.profile-overview .bio a {
+    color: #fff
+}
+
+.profile-overview .description {
+    width: 80%;
+    margin: 5px auto
+}
+
+.profile-overview [class^=dir] {
+    text-align: center
+}
+
+.profile-overview .url {
+    white-space: nowrap;
+    margin: 4px 0;
+    font-style: normal
+}
+
+.profile-overview .url>a {
+    font-weight: 700;
+    color: #FFF
+}
+
+.profile-overview .stats-count-group {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-left: solid thin #E6E6E6;
+    padding: 6px 12px 8px
+}
+
+.profile-overview .stats-count-group.selected {
+    background-color: #EEE
+}
+
+.profile .stats-count-group:first-child {
+    border-left: none
+}
+
+.profile-overview .stats-count {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    font-weight: 700
+}
+
+.profile-overview .stats-name {
+    text-transform: uppercase;
+    color: #999;
+    font-size: 10px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.profile-overview .follows-you {
+    display: none
+}
+
+.profile[followedby=true]:not([currentUser=true]) .follows-you {
+    border-radius: 3px;
+    display: inline;
+    padding: 2px 5px;
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.profile-actions {
+    padding: 10px;
+    border-top: 1px solid #E6E6E6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.profile-actions>.flexible-space {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.profile-actions>.button+.button,
+.profile-actions>.button+.flexible-space,
+.profile-actions>.button+.followbutton-container {
+    margin-left: 10px
+}
+
+.profile-actions>.button,
+.profile-actions>.followbutton-container {
+    display: block;
+    overflow: visible
+}
+
+.profile-actions>.lifeline-signup {
+    font-weight: 700;
+    padding: 6px 10px 7px;
+    position: relative;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#efefef));
+    background-image: -webkit-linear-gradient(top, #fff, #efefef);
+    background-image: linear-gradient(to bottom, #fff, #efefef);
+    border-color: #F36E3A
+}
+
+.profile-actions>.lifeline-signup:active {
+    background-color: #efefef;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+    background-image: -webkit-linear-gradient(top, #efefef, #fff);
+    background-image: linear-gradient(to bottom, #efefef, #fff);
+    border-color: #DF5712
+}
+
+.profile-actions>.lifeline-signup>.button-icon {
+    position: absolute;
+    left: 8px;
+    top: 4px
+}
+
+.profile-actions>.lifeline-signup[data-status=deactivated]>.button-icon {
+    background-position: 0 -1px
+}
+
+.profile-actions>.lifeline-signup[data-status=activated]>.button-icon {
+    background-position: -24px -1px
+}
+
+.profile-actions>.lifeline-signup[data-status=activating]>.button-icon,
+.profile-actions>.lifeline-signup[data-status=deactivating]>.button-icon {
+    background: url(../html5/framework/core/assets/m_spinner_black.png) center 40% no-repeat;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    -webkit-background-size: 19px 19px;
+    background-size: 19px 19px;
+    top: 5px;
+    width: 19px;
+    height: 19px
+}
+
+.profile-actions>.lifeline-signup>.button-text {
+    margin: 0 0 0 25px;
+    max-width: 145px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.profile-actions>.direct-messages>.envelope {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.profile-actions>.direct-messages>.unread-count-container {
+    border: 1px solid transparent;
+    border-width: 1px 9px;
+    -webkit-border-image: url(../html5/applications/m5/assets/unread-count.png) 2 17 2 17 fill;
+    -o-border-image: url(../html5/applications/m5/assets/unread-count.png) 2 17 2 17 fill;
+    border-image: url(../html5/applications/m5/assets/unread-count.png) 2 17 2 17 fill;
+    position: relative;
+    top: 1px;
+    margin: -2px -2px -2px 1px;
+    display: none
+}
+
+.profile-actions>.direct-messages>.unread-count-container>.count {
+    height: 17px;
+    line-height: 16px;
+    margin: 0 -4px;
+    text-shadow: none;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff
+}
+
+.signedout .profile-overview .follow-button.large .follow-button-text {
+    display: none
+}
+
+.signedout .profile-overview .follow-button.large .follow-button-text.follow-user-text {
+    display: inline
+}
+
+.profile-overview .follow-button .button {
+    vertical-align: middle
+}
+
+.profile-actions-button {
+    text-overflow: clip;
+    padding: 4px 8px 5px;
+    text-align: center;
+    vertical-align: top
+}
+
+.badge-tweet-text,
+.cluster-user-item .description,
+.user-item .full-name .text {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.profile-actions-button>.button-icon {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.profile-widget {
+    margin-bottom: 10px
+}
+
+.profile[protected=true]:not([currentuser=true]) .profile-similar-title,
+.profile[protected=true]:not([currentuser=true]) .profile-similar-to-container {
+    display: none
+}
+
+.button-active {
+    background-image: none;
+    text-shadow: none
+}
+
+.screen-name.mention {
+    color: #999
+}
+
+.button .head {
+    margin-bottom: 1px;
+    margin-left: 0;
+    margin-right: -2px
+}
+
+.button .down-arrow {
+    background-position: -940px 0;
+    margin: 0 -1px 0 1px;
+    width: 8px;
+    height: 6px
+}
+
+.suspended-head {
+    margin-bottom: 10px
+}
+
+.suspended-h1 {
+    color: #444;
+    font-size: 32px;
+    font-weight: 300
+}
+
+.stream-title-h2 {
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding: 5px 20px
+}
+
+.user-item {
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 34px;
+    padding: 10px 0
+}
+
+.user-item .social-context {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 6px
+}
+
+.user-item .social-context-text {
+    margin-left: 8px;
+    display: block
+}
+
+.user-item .social-context-icon-block {
+    text-align: right;
+    display: block;
+    width: 32px;
+    margin: 0 0 0 10px
+}
+
+.user-item .avatar {
+    width: 32px;
+    height: 32px;
+    margin: 0 0 0 10px;
+    overflow: hidden
+}
+
+.user-item .user-info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    padding: 0 6px 0 10px;
+    margin: -3px 0 0;
+    overflow: hidden
+}
+
+.user-item .user-name .full-name,
+.user-item .user-name .screen-name {
+    display: block;
+    margin-left: 0;
+    padding: 0
+}
+
+.user-item .user-name .screen-name {
+    font-size: 13px;
+    line-height: 16px
+}
+
+.user-item .user-name .full-name {
+    font-size: 14px
+}
+
+.user-item .full-name .text {
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: text-bottom;
+    max-width: 88%
+}
+
+.user-item .protected-icon {
+    display: inline-block
+}
+
+.user-item .verified-icon {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+.user-item .follows-you.hidden {
+    opacity: 0
+}
+
+.user-item .follows-you {
+    border-radius: 5px;
+    color: #999;
+    background-color: rgba(0, 0, 0, .075);
+    font-size: 80%;
+    padding: 3px 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 1;
+    -webkit-transition: opacity 250ms ease-in;
+    transition: opacity 250ms ease-in
+}
+
+.firefox .user-item .follows-you {
+    display: none
+}
+
+.user-item .followbutton-container {
+    margin: 0 10px 0 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.detail-user-item .social-context-icon-block,
+.large-avatar .social-context-icon-block {
+    width: 48px
+}
+
+.detail-user-item .avatar,
+.large-avatar .avatar {
+    width: 48px;
+    height: 48px
+}
+
+.detail-user-item .user-item-main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    padding: 0 10px 0 8px
+}
+
+.detail-user-item .user-item-user {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.detail-user-item .user-name .screen-name {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 4px
+}
+
+.detail-user-item .user-name .full-name {
+    font-size: 14px
+}
+
+.detail-user-item .user-info {
+    padding: 0;
+    margin-top: -4px
+}
+
+.large-avatar .followbutton-container {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.detail-user-item .followbutton-container {
+    margin: 0 0 0 5px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.detail-user-item .description {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #666
+}
+
+.requests-buttons {
+    text-align: right
+}
+
+.requests-buttons>.button {
+    margin-right: 10px;
+    padding: 5px;
+    min-width: 20px;
+    text-align: center
+}
+
+.requests-buttons-icon {
+    display: inline-block
+}
+
+.user-name .full-name,
+.user-name .screen-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.user-name .full-name {
+    font-weight: 700;
+    vertical-align: bottom;
+    line-height: 18px;
+    display: inline-block
+}
+
+.user-name .screen-name {
+    line-height: 14px;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.goto-profile {
+    padding: 15px 10px
+}
+
+.profile-media-container {
+    min-height: 140px;
+    display: none
+}
+
+.profile-menu-item:not(:last-child) {
+    border-bottom: 1px solid #EEE
+}
+
+.cluster-user-item {
+    padding: 0;
+    background-color: #fff
+}
+
+.cluster-user-item .stream-item-wrapper {
+    display: block;
+    padding: 12px 12px 14px;
+    text-align: center
+}
+
+.cluster-user-item .followbutton-container {
+    position: absolute;
+    right: 0
+}
+
+.cluster-user-item .large b.follow .button-icon {
+    position: relative;
+    left: -1px;
+    width: 18px
+}
+
+.cluster-user-item .large b.follow .follow-button-text {
+    padding: 0
+}
+
+.cluster-user-item .user-item-main {
+    font-size: 12px;
+    line-height: 1;
+    color: #999
+}
+
+.cluster-user-item .avatar {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px
+}
+
+.cluster-user-item .user-name {
+    margin-top: 6px
+}
+
+.cluster-user-item .user-name .full-name {
+    display: inline;
+    max-width: 100%;
+    font-size: 14px;
+    color: #333
+}
+
+.cluster-user-item .user-name .verified-icon {
+    vertical-align: middle
+}
+
+.cluster-user-item .user-name .screen-name {
+    display: inline
+}
+
+.cluster-user-item .description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 4px;
+    -webkit-line-clamp: 2;
+    line-height: 16px
+}
+
+.cluster-user-item .social-context {
+    display: block;
+    margin: 7px 0 0;
+    text-align: center
+}
+
+.cluster-user-item .social-context .social-context-icon-block,
+.cluster-user-item .social-context .social-context-text {
+    display: inline;
+    margin-left: 2px;
+    vertical-align: middle
+}
+
+.empty-timeline-nux .install-app-prompt {
+    display: none;
+    padding-top: 2px;
+    padding-bottom: 2px
+}
+
+.empty-timeline-nux .install-app-prompt-container {
+    display: none;
+    margin-top: 8px
+}
+
+.empty-timeline-nux .install-app-prompt-container .install-app-prompt .img {
+    margin-top: 0;
+    height: 24px;
+    width: 24px
+}
+
+.empty-timeline-nux .install-app-prompt .title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 24px
+}
+
+.empty-timeline-nux .install-app-prompt .title .title-text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    overflow: hidden;
+    font-size: 15px
+}
+
+.empty-timeline-nux .install-app-prompt .title .white-arrow {
+    margin-top: 0
+}
+
+.empty-timeline-nux .install-app-prompt-container .install-app-prompt .space {
+    padding-top: 7px
+}
+
+.empty-timeline-nux .wtf .stream-container {
+    border-top: 1px solid #d7d7d7
+}
+
+.empty-timeline-nux .empty-home {
+    margin-bottom: 0;
+    padding: 6px 10px 2px
+}
+
+.empty-timeline-nux .empty-home .empty-home-title {
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+    margin-top: 6px
+}
+
+.empty-timeline-nux .empty-home .empty-home-body {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    line-height: 16px;
+    margin-top: 5px;
+    margin-bottom: 8px
+}
+
+.timeline.stream-container {
+    margin-bottom: 10px
+}
+
+.view-discover .timeline.stream-container {
+    border: none;
+    background: 0 0
+}
+
+.empty-home {
+    font-size: 14px;
+    padding: 20px
+}
+
+.tweet-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-height: 48px;
+    margin: -2px 0 -4px 8px
+}
+
+.tweet-text {
+    padding: 0
+}
+
+.extra-icons {
+    margin: 0 3px 0 0
+}
+
+.extra-icon {
+    vertical-align: bottom
+}
+
+.stream-tweet[reply=true] .reply-icon {
+    display: inline-block
+}
+
+.geo-pin {
+    display: none
+}
+
+.stream-tweet[geo=true] .geo-pin {
+    display: inline-block
+}
+
+.translate-icon {
+    display: none
+}
+
+.stream-tweet[can_translate=true] .translate-icon {
+    display: inline-block
+}
+
+.inlinemedia-icons {
+    display: none
+}
+
+.inlinemedia-icons.photo,
+.inlinemedia-icons.summary,
+.inlinemedia-icons.video,
+.lifeline-bell,
+i.social-context-icon {
+    display: inline-block
+}
+
+.inlinemedia-icons.audio {
+    width: 11px;
+    height: 14px;
+    display: inline-block
+}
+
+.badge-tweet-alert,
+.basics .verified-icon {
+    height: 18px;
+    width: 18px
+}
+
+.badge-tweet-text {
+    white-space: nowrap;
+    font-style: normal;
+    vertical-align: middle
+}
+
+i {
+    background: url(../html5/applications/m5/assets/sprite_mobile.png) no-repeat;
+    -webkit-background-size: 325px 236px;
+    background-size: 325px 236px
+}
+
+.badge-tweet-alert,
+.lifeline-alert-status,
+.lifeline-bell {
+    background: url(../html5/applications/m5/assets/lifeline.png) no-repeat;
+    -webkit-background-size: 80px 26px;
+    background-size: 80px 26px
+}
+
+.protected-icon {
+    background-position: -44px -185px
+}
+
+.verified-icon {
+    background-position: -43px -170px
+}
+
+.basics .verified-icon {
+    background-position: 0 -173px
+}
+
+.geo-pin {
+    background-position: 0 -118px;
+    width: 10px;
+    height: 14px
+}
+
+.translate-icon {
+    background-position: -125px -137px;
+    width: 14px;
+    height: 15px
+}
+
+.stream-tweet .extra-icons .reply-icon {
+    background-position: -26px -119px;
+    width: 11px;
+    height: 14px
+}
+
+.inlinemedia-icons {
+    width: 14px;
+    height: 14px
+}
+
+.inlinemedia-icons.photo {
+    background-position: -54px -119px
+}
+
+.inlinemedia-icons.audio,
+.inlinemedia-icons.video {
+    background-position: -87px -119px
+}
+
+.inlinemedia-icons.summary {
+    background-position: -119px -119px
+}
+
+.retweet-icon {
+    background-position: -75px -103px
+}
+
+.toptweet-icon {
+    background-position: -114px -103px
+}
+
+i.badge-tweet {
+    width: 17px;
+    height: 12px
+}
+
+.badge-tweet-promoted {
+    background-position: 0 -103px
+}
+
+.badge-tweet-political {
+    background-position: -38px -103px
+}
+
+.badge-tweet-alert {
+    background-position: -48px -2px
+}
+
+.large .plus,
+.plus {
+    background-position: -68px -136px
+}
+
+.small .plus {
+    background-position: 0 -136px
+}
+
+.small .you-follow {
+    background-position: -34px -136px
+}
+
+.activity-image {
+    width: 15px;
+    height: 12px
+}
+
+.activity-image.plus {
+    background-position: 0 -156px;
+    width: 10px
+}
+
+.activity-image.retweet {
+    background-position: -36px -156px;
+    width: 14px
+}
+
+.activity-image.list {
+    background-position: -111px -156px;
+    width: 13px
+}
+
+.activity-image.fave {
+    background-position: -80px -156px;
+    width: 10px
+}
+
+body.use-heart-for-like .activity-image.fave {
+    background-position: -239px -156px;
+    width: 10px
+}
+
+.thread-status .status-icon.reply {
+    background-position: -149px -156px;
+    width: 16px
+}
+
+.thread-status .status-icon.unread {
+    background-position: -184px -201px
+}
+
+.tweet-actions .retweet-icon,
+.tweetAction.retweet {
+    background-position: -25px -33px
+}
+
+.stream-tweet[retweeted=true] .tweetAction.retweet,
+.tweet-actions .unretweet-icon {
+    background-position: -56px -33px
+}
+
+.details-pane[retweetable=false] .retweet-action .retweet-icon,
+.stream-tweet[retweetable=false] .tweetAction.retweet {
+    background-position: -25px -33px;
+    opacity: .5
+}
+
+.tweet-actions .reply-icon,
+.tweetAction.reply {
+    background-position: 0 -33px
+}
+
+.tweet-actions .fav-icon,
+.tweetAction.fav {
+    background-position: -87px -33px
+}
+
+body.use-heart-for-like .tweet-actions .fav-icon,
+body.use-heart-for-like .tweetAction.fav {
+    background-position: -245px -33px
+}
+
+.stream-tweet[favorited=true] .tweetAction.fav,
+.tweet-actions .unfav-icon {
+    background-position: -108px -33px
+}
+
+body.use-heart-for-like .stream-tweet[favorited=true] .tweetAction.fav,
+body.use-heart-for-like .tweet-actions .unfav-icon {
+    background-position: -266px -33px
+}
+
+.tweet-actions .delete-icon,
+.tweetAction.delete {
+    background-position: -160px -32px
+}
+
+.tweet-actions .more-icon,
+.tweetAction.more {
+    background-position: -128px -32px
+}
+
+.stream-tweet[retweeted=true] .tweet-dogear {
+    background-position: -151px -104px
+}
+
+.stream-tweet[favorited=true] .tweet-dogear {
+    background-position: -178px -104px
+}
+
+.stream-tweet[favorited=true][retweeted=true] .tweet-dogear {
+    background-position: -205px -104px
+}
+
+body.use-heart-for-like .stream-tweet[favorited=true] .tweet-dogear {
+    background-position: -270px -104px
+}
+
+body.use-heart-for-like .stream-tweet[favorited=true][retweeted=true] .tweet-dogear {
+    background-position: -297px -104px
+}
+
+.tweets-slideshow .tweet-actions .retweet-icon {
+    background-position: -25px -57px
+}
+
+.tweets-slideshow .tweet-actions .unretweet-icon {
+    background-position: -56px -57px
+}
+
+.tweets-slideshow .tweet-actions[retweetable=false] .retweet-icon {
+    background-position: -25px -57px;
+    opacity: .5
+}
+
+.tweets-slideshow .tweet-actions .reply-icon {
+    background-position: 0 -57px
+}
+
+.tweets-slideshow .tweet-actions .fav-icon {
+    background-position: -87px -57px
+}
+
+body.use-heart-for-like .tweets-slideshow .tweet-actions .fav-icon {
+    background-position: -245px -57px
+}
+
+.tweets-slideshow .tweet-actions .unfav-icon {
+    background-position: -108px -57px
+}
+
+body.use-heart-for-like .tweets-slideshow .tweet-actions .unfav-icon {
+    background-position: -266px -57px
+}
+
+.tweets-slideshow .tweet-actions .more-icon {
+    background-position: -128px -57px
+}
+
+.larry {
+    background-position: 0 -200px
+}
+
+.signup .button-icon {
+    background-position: -26px -200px
+}
+
+.navIcon {
+    height: 25px;
+    width: 25px
+}
+
+.navIcon.tweets {
+    background-position: -1px 0
+}
+
+.navItem.active .navIcon.tweets {
+    background-position: -34px 0
+}
+
+.navIcon.connect {
+    background-position: -66px 0;
+    width: 26px
+}
+
+.navItem.active .navIcon.connect {
+    background-position: -100px 0
+}
+
+.navIcon.discover {
+    background-position: -134px 0;
+    width: 21px
+}
+
+.navItem.active .navIcon.discover {
+    background-position: -161px 0
+}
+
+.navIcon.accountIcon {
+    background-position: -187px 0;
+    width: 26px
+}
+
+.navItem.active .navIcon.accountIcon {
+    background-position: -219px 0
+}
+
+.navIcon.composeIcon {
+    background-position: -5px -77px;
+    width: 26px;
+    height: 23px
+}
+
+.navIcon.search {
+    background-position: -63px -77px;
+    height: 23px;
+    width: 28px
+}
+
+.navIcon.peopleButton {
+    background-position: -242px -77px;
+    height: 23px;
+    width: 28px;
+    margin-right: -5px
+}
+
+.navIcon.openApp {
+    background-position: -213px -80px;
+    width: 20px;
+    height: 20px
+}
+
+.navIcon.shareIcon {
+    background-position: -245px -104px
+}
+
+.navIcon.shareIcon.android {
+    background-position: -242px -130px
+}
+
+.navItem.airplane_icon .navIcon.shareIcon {
+    background-position: -212px -130px
+}
+
+.navItem.email_icon .navIcon.shareIcon {
+    background-position: -181px -129px
+}
+
+.brandmark {
+    background-position: -54px -200px;
+    height: 21px;
+    width: 22px
+}
+
+.navIcon.goback {
+    background-position: -98px -82px;
+    width: 19px;
+    height: 16px
+}
+
+.navIcon.refresh {
+    background-position: -218px -200px;
+    width: 16px;
+    height: 15px
+}
+
+.camera-icon {
+    background-position: -123px -77px;
+    width: 21px;
+    height: 20px
+}
+
+.camera-container.active .camera-icon {
+    background-position: -148px -77px
+}
+
+.geo-status {
+    background-position: -173px -77px;
+    width: 12px;
+    height: 20px
+}
+
+.geo-control.active .geo-status {
+    background-position: -190px -77px
+}
+
+.lifeline-alert-control .lifeline-alert-status {
+    background-position: 0 -1px;
+    width: 21px;
+    height: 20px
+}
+
+.lifeline-alert-control.active .lifeline-alert-status,
+.lifeline-bell {
+    background-position: -24px -1px
+}
+
+.lifeline-bell {
+    width: 21px;
+    height: 20px
+}
+
+.newdmIcon {
+    background-position: -36px -77px
+}
+
+.markread-icon {
+    background-position: -219px -199px
+}
+
+.white-arrow {
+    background-position: -77px -200px
+}
+
+.dark-arrow {
+    background-position: -86px -200px
+}
+
+.light-arrow {
+    background-position: -95px -200px
+}
+
+.arrow-icon.left {
+    background-position: -181px -171px
+}
+
+.arrow-icon.right {
+    background-position: -198px -171px
+}
+
+.reload-nudge {
+    background-position: -166px -154px;
+    width: 35px;
+    height: 20px
+}
+
+.dialog-close .closeIcon,
+.genericprompt .closeIcon {
+    background-position: -179px -60px;
+    width: 12px;
+    height: 11px
+}
+
+.searchIcon {
+    background-position: -135px -201px;
+    width: 15px;
+    height: 14px
+}
+
+.requests-buttons-icon {
+    height: 15px;
+    width: 18px
+}
+
+.acceptIconLarge {
+    background-position: -134px -178px
+}
+
+.declineIconLarge {
+    background-position: -159px -178px
+}
+
+.gear {
+    background-position: -84px -176px;
+    width: 18px;
+    height: 19px
+}
+
+.head {
+    background-position: -59px -176px;
+    width: 18px;
+    height: 18px
+}
+
+.envelope {
+    background-position: -108px -178px;
+    width: 21px;
+    height: 15px
+}
+
+i.social-context-icon {
+    height: 10px;
+    vertical-align: baseline
+}
+
+.social-context-icon.retweet-icon {
+    background-position: -25px -225px;
+    width: 14px
+}
+
+.social-context-icon.toptweet-icon {
+    background-position: -100px -225px;
+    width: 11px
+}
+
+.social-context-icon.follow-icon,
+.social-context-icon.highlight-icon {
+    background-position: 0 -225px;
+    width: 11px
+}
+
+.social-context-icon.reply-icon {
+    background-position: -79px -225px;
+    width: 10px
+}
+
+.social-context-icon.in-reply-icon {
+    background-position: -125px -225px;
+    width: 12px
+}
+
+.social-context-icon.favorite-icon {
+    background-position: -56px -225px;
+    width: 10px
+}
+
+body.use-heart-for-like .social-context-icon.favorite-icon {
+    background-position: -174px -225px;
+    width: 10px
+}
+
+.social-context-icon.highlighttweet-icon {
+    background: url(../html5/applications/m5/assets/magic_micro_larry.png) no-repeat;
+    -webkit-background-size: 16px 16px;
+    background-size: 16px 16px;
+    background-position-y: -3px;
+    width: 16px
+}
+
+.shaded .social-context-icon.retweet-icon {
+    background-position: -41px -225px
+}
+
+.shaded .social-context-icon.toptweet-icon {
+    background-position: -112px -225px
+}
+
+.shaded .social-context-icon.follow-icon {
+    background-position: -12px -225px
+}
+
+.shaded .social-context-icon.reply-icon {
+    background-position: -89px -225px
+}
+
+.shaded .social-context-icon.favorite-icon {
+    background-position: -67px -225px
+}
+
+body.use-heart-for-like .shaded .social-context-icon.favorite-icon {
+    background-position: -186px -225px
+}
+
+.graph-icon {
+    background-position: -158px -136px;
+    width: 22px;
+    height: 18px
+}
+
+.close-prompt-icon,
+.gear-icon {
+    display: inline-block;
+    width: 12px
+}
+
+.close-prompt-icon {
+    background-position: -121px -202px;
+    height: 13px
+}
+
+.gear-icon {
+    height: 12px;
+    background: url(../html5/applications/m5/assets/gear.png) no-repeat;
+    -webkit-background-size: 12px 12px;
+    background-size: 12px 12px
+}
